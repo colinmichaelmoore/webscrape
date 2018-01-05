@@ -24,7 +24,7 @@ namespace webscrape_demo
             };
 
             //Variable to store the site to scrape
-            var pageResult = browser.NavigateToPage(new Uri("http://money.cnn.com/data/markets/"));
+            var pageResult = browser.NavigateToPage(new Uri("http://money.cnn.com/data/markets"));
             //Store title based on CSS class
             var titleNode = pageResult.Html.CssSelect(".module-header").First();
             var pageTitle = titleNode.InnerText;
